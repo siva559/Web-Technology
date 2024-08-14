@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Deactivation Form</title>
+    <style>
+        body {
+            background-color: #f8f8fa;
+        }
+        .container {
+            width: 60%;
+            margin: 50px auto;
+            background-color: rgb(213, 209, 213);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #e83eff;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        textarea {
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        textarea {
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Instagram Deactivation Form</h1>
+        <form>
+            <div class="form-group">
+                <label for="Instagram ID">Instagram ID</label>
+                <input type="text" id="Instagram" name="ID" placeholder="Enter your Instagram ID">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address">
+            </div>
+            <div class="form-group">
+                <label for="contact number"></label>Contact number</label>
+                <input type="number" id="contact number" name="number" placeholder="Enter your contact number">
+            </div>
+            <div class="form-group">
+                <label for="reason">Reason for Deactivation</label>
+                <select id="reason" name="reason" required>
+                    <option value="" disabled selected>Select a reason</option>
+                    <option value="privacy">Privacy Concerns</option>
+                    <option value="not-using">No Longer Using the Account</option>
+                    <option value="other">Other</option>
+                    <option value="foul content">Foul content of data</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="comments">Additional data</label>
+                <textarea id="comments" name="comments" rows="5" placeholder="Enter any additional comments"></textarea>
+            </div>
+            <div class="form-group checkbox">
+                <input type="checkbox" id="confirm" name="confirm">
+                <label for="confirm">I confirm that I want to deactivate my account</label>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
